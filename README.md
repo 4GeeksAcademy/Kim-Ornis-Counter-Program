@@ -1,1 +1,128 @@
 # Kim-Ornis-Counter-Program
+//This is a Comment 
+
+/*
+this is 
+a 
+comment 
+*/
+
+/*
+console.log('Hello World');
+console.log('I like Pizza');
+
+window.alert('This is an alert!');
+window.alert('Did you do something wrong?');
+*/
+/*
+First must declare an ID in html 
+document.getElementById('myH1').textContent = 'Hello My People';
+document.getElementById('myP').textContent = 'Lets all learn to code together ';
+*/
+
+
+Variable = a container that stores a value.
+           Behaves as if it were the value it contained 
+
+1. declaration  let x;
+2. assignment   x = 100;
+
+   let x = 123;
+
+Data Types:
+    Numbers::
+        let age = 23;
+        let price = 10.99;
+        let gpa = 3.9;
+
+            console.log(typeof gpa);
+            console.log('You are ${age} years old');
+            console.log('The price is ${price}');
+            console.log('Your gpa is: ${gpa}');
+
+    Strings::  ('a series of characters')
+        let firstName = 'Bro';
+        let favoriteFood = 'pizza';
+        let email = 'ornisk123@yahoo.com';  (these numbers cannot be used for math)
+
+            console.log(typeof firstName);
+            console.log('Your name is  ${firstName}');
+            console.log('you like ${favoriteFood}');
+            console.log('Your email is  ${email}');
+
+    Boolean::  ('True or false ')
+        let online = false;
+        let forSale = true;
+        let isStudent = true;
+
+            console.log('Bro is online ${online}');
+            console.log('Is the car for sale ${forSale}');
+            console.log('Enrolled: ${isStudent}');
+
+
+
+Arithmetic Operators = operands (values, variables, etc.)
+                       operators (+ - * /)
+                       ex. 11 = x + 5;
+
+        Let students = 30;
+
+        students = students + 1;
+        students = students - 1;
+        students = students * 1;
+        students = students / 1;
+        students = students ** 1;
+        let extraStudents = students % 3;
+
+            or 
+
+        students += 1;
+        students -= 1;
+        students *= 1;
+        students /= 1;
+        students **= 1;
+        let extraStudents %= 3;
+
+        student++;  (gives you students plus 1 )
+        student--;  (gives you students minus 1 )
+        
+
+            console.log(students);
+
+    Operator precedence
+        1. Parenthesis ()
+        2. exponents
+        3. mulitplication and division and modulo
+        4. addition and subtraction 
+
+        let result = 1 + 2 * 3 - 4 ** 2;
+            consol.log(result);
+
+
+
+How to Accept user Input 
+    1. Easy way = Window Prompt 
+        let username ;
+            username = window.prompt('whats your username?');
+            console.log(username);
+
+    2. PROFESSIONAL WAY = HTML textbox 
+        let username;
+        document.getElementById('mySubmit').onclick = function(){
+            username = document.getElementById('myText').value;
+            document.getElementById('myH1').textContent = 'Hello ${username}'
+        }
+
+Type Conversion = Change the datatype of a value to another 
+                  (strings, numbers, booleans)
+
+                let x = '10';
+                let y = '10';
+                let z = '10';
+
+                 x =  Number(x);
+                 y =  String(y);
+                 z =  Boolean(z);
+
+const = a variable that cant be changed 
+     
