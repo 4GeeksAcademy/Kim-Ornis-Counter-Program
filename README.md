@@ -120,9 +120,36 @@ Type Conversion = Change the datatype of a value to another
                 let y = '10';
                 let z = '10';
 
-                 x =  Number(x);
-                 y =  String(y);
-                 z =  Boolean(z);
+                            x =  Number(x);
+                            y =  String(y);
+                            z =  Boolean(z);
 
 const = a variable that cant be changed 
+
+
+
+Math = built-in object that provides a collection of properties and methods.
+           let x = 30;
+           let y = 2;
+           let z;
+                      z = Math.round(x);
+                      z = Math.floor(x);
+                      z = Math.ceil(x);
+                      z = Math.trunc(x);
+                      z = Math.pow(x, y);
+                      z = Math.sqrt(x);
+                      z = Math.log(x);
+                      z = Math.sin(x);
+                      z = Math.cos(x);
+                      z = Math.tan(x);
+                      z = Math.abs(x);
+                      z = Math.sign(x);
+                                 console.log(z);
+                      
+                      let max = Math.max(x, y, z);
+                      let max = Math.min(x, y, z);
+                                 console.log(max);
+                                 console.log(min);
+           
+
      
