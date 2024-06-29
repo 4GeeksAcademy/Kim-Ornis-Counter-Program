@@ -21,7 +21,7 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
 */
 
 
-Variable = a container that stores a value.
+***** Variable = a container that stores a value. *****
            Behaves as if it were the value it contained 
 
 1. declaration  let x;
@@ -29,7 +29,7 @@ Variable = a container that stores a value.
 
    let x = 123;
 
-Data Types:
+***** Data Types: *****
     Numbers::
         let age = 23;
         let price = 10.99;
@@ -61,7 +61,7 @@ Data Types:
 
 
 
-Arithmetic Operators = operands (values, variables, etc.)
+***** Arithmetic Operators = operands (values, variables, etc.) *****
                        operators (+ - * /)
                        ex. 11 = x + 5;
 
@@ -89,7 +89,7 @@ Arithmetic Operators = operands (values, variables, etc.)
 
             console.log(students);
 
-    Operator precedence
+  *****  Operator precedence *****
         1. Parenthesis ()
         2. exponents
         3. mulitplication and division and modulo
@@ -100,7 +100,7 @@ Arithmetic Operators = operands (values, variables, etc.)
 
 
 
-How to Accept user Input 
+***** How to Accept user Input *****
     1. Easy way = Window Prompt 
         let username ;
             username = window.prompt('whats your username?');
@@ -113,7 +113,7 @@ How to Accept user Input
             document.getElementById('myH1').textContent = 'Hello ${username}'
         }
 
-Type Conversion = Change the datatype of a value to another 
+***** Type Conversion = Change the datatype of a value to another *****
                   (strings, numbers, booleans)
 
                 let x = '10';
@@ -124,11 +124,11 @@ Type Conversion = Change the datatype of a value to another
                             y =  String(y);
                             z =  Boolean(z);
 
-const = a variable that cant be changed 
+***** const = a variable that cant be changed *****
 
 
 
-Math = built-in object that provides a collection of properties and methods.
+***** Math = built-in object that provides a collection of properties and methods. *****
            let x = 30;
            let y = 2;
            let z;
@@ -151,7 +151,7 @@ Math = built-in object that provides a collection of properties and methods.
                                  console.log(max);
                                  console.log(min);
 
-IF STATEMENTS = if a conditon is true, execute some code if not, do something else 
+***** IF STATEMENTS = if a conditon is true, execute some code if not, do something else *****
            if(condition){
                       Action
                       console.log('message');
@@ -163,5 +163,74 @@ IF STATEMENTS = if a conditon is true, execute some code if not, do something el
 
 == two equal signs check if equal to 
            
-CHECKED = property that determines the checked state of an HTML checkbox or radio button element 
-     
+***** CHECKED = property that determines the checked state of an HTML checkbox or radio button element *****
+
+
+***** TERNARY OPERATOR = a shortcut to if{} and else{} statements helps to assign a varibale based on a condition (better then using IF/Else statements)*****
+                   condition ? codeIfTrue : CodeIfFalse;
+                   
+           example: let age = 21;
+                    let message = age >= 18 ? 'you're an adult' : 'your a minor';
+                    console.log(message);
+***** SWITCH = can be an efficent replacement to many Else/If statements *****
+
+Example 1:
+           let day = 1;
+           
+           switch(day){
+               case 1:
+                    console.log('It is Monday!');
+                    break;
+               case 2:
+                    console.log('It is Tuesday!');
+                    break;
+               case 3:
+                    console.log('It is Wednesday!');
+                    break;
+               case 4:
+                    console.log('It is Thursday!');
+                    break;
+               case 5:
+                    console.log('It is Friday!');
+                    break;
+               case 6:
+                    console.log('It is Saturday!');
+                    break;
+               case 7:
+                    console.log('It is Sunday!');
+                    break;   
+               default:
+                          console.log(${day} is not a day!');
+                          
+           }
+
+Example 2:
+           let testScore = 71;
+           let letterGrade;
+           
+           switch(true){
+               case  testScore >= 90:
+                      letterGrade = 'A';
+                      break;
+               case  testScore >= 80:
+                      letterGrade = 'B';
+                      break;
+               case  testScore >= 70:
+                      letterGrade = 'C';
+                      break;
+               case  testScore >= 60:
+                      letterGrade = 'D';
+                      break;
+               default:
+                      letterGrade = 'F';
+           }
+           console.log(letterGrade);
+           
+
+
+
+
+
+
+
+
