@@ -150,6 +150,18 @@ Math = built-in object that provides a collection of properties and methods.
                       let max = Math.min(x, y, z);
                                  console.log(max);
                                  console.log(min);
-           
 
+IF STATEMENTS = if a conditon is true, execute some code if not, do something else 
+           if(condition){
+                      Action
+                      console.log('message');
+           }
+           else{
+                      if the if condition is not true then do this this
+                      console.log('message');
+           }
+
+== two equal signs check if equal to 
+           
+CHECKED = property that determines the checked state of an HTML checkbox or radio button element 
      
