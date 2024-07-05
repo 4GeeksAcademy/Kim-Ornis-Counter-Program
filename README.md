@@ -24,12 +24,13 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
 ***** Variable = a container that stores a value. *****
            Behaves as if it were the value it contained 
 
-1. declaration  let x;
-2. assignment   x = 100;
+           1. declaration  let x;
+           2. assignment   x = 100;
 
-   let x = 123;
+              let x = 123;
 
 ***** Data Types: *****
+
     Numbers::
         let age = 23;
         let price = 10.99;
@@ -62,8 +63,9 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
 
 
 ***** Arithmetic Operators = operands (values, variables, etc.) *****
-                       operators (+ - * /)
-                       ex. 11 = x + 5;
+
+           operators (+ - * /)
+           ex. 11 = x + 5;
 
         Let students = 30;
 
@@ -90,17 +92,20 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
             console.log(students);
 
   *****  Operator precedence *****
+  
         1. Parenthesis ()
         2. exponents
         3. mulitplication and division and modulo
         4. addition and subtraction 
-
+        
+    Example:
         let result = 1 + 2 * 3 - 4 ** 2;
             consol.log(result);
 
 
 
 ***** How to Accept user Input *****
+
     1. Easy way = Window Prompt 
         let username ;
             username = window.prompt('whats your username?');
@@ -129,6 +134,7 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
 
 
 ***** Math = built-in object that provides a collection of properties and methods. *****
+
            let x = 30;
            let y = 2;
            let z;
@@ -146,12 +152,14 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
                       z = Math.sign(x);
                                  console.log(z);
                       
+                          
                       let max = Math.max(x, y, z);
                       let max = Math.min(x, y, z);
                                  console.log(max);
                                  console.log(min);
 
 ***** IF STATEMENTS = if a conditon is true, execute some code if not, do something else *****
+
            if(condition){
                       Action
                       console.log('message');
@@ -169,63 +177,148 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
 ***** TERNARY OPERATOR = a shortcut to if{} and else{} statements helps to assign a varibale based on a condition (better then using IF/Else statements)*****
                    condition ? codeIfTrue : CodeIfFalse;
                    
-           example: let age = 21;
+           Example: let age = 21;
                     let message = age >= 18 ? 'you're an adult' : 'your a minor';
                     console.log(message);
+                    
 ***** SWITCH = can be an efficent replacement to many Else/If statements *****
 
-Example 1:
-           let day = 1;
+           Example 1:
+                      let day = 1;
            
-           switch(day){
-               case 1:
-                    console.log('It is Monday!');
-                    break;
-               case 2:
-                    console.log('It is Tuesday!');
-                    break;
-               case 3:
-                    console.log('It is Wednesday!');
-                    break;
-               case 4:
-                    console.log('It is Thursday!');
-                    break;
-               case 5:
-                    console.log('It is Friday!');
-                    break;
-               case 6:
-                    console.log('It is Saturday!');
-                    break;
-               case 7:
-                    console.log('It is Sunday!');
-                    break;   
-               default:
-                          console.log(${day} is not a day!');
-                          
+                                 switch(day){
+                                     case 1:
+                                          console.log('It is Monday!');
+                                          break;
+                                     case 2:
+                                          console.log('It is Tuesday!');
+                                          break;
+                                     case 3:
+                                          console.log('It is Wednesday!');
+                                          break;
+                                     case 4:
+                                          console.log('It is Thursday!');
+                                          break;
+                                     case 5:
+                                          console.log('It is Friday!');
+                                          break;
+                                     case 6:
+                                          console.log('It is Saturday!');
+                                          break;
+                                     case 7:
+                                          console.log('It is Sunday!');
+                                          break;   
+                                     default:
+                                                console.log(${day} is not a day!');
+                                                
+                                 }
+
+           Example 2:
+           
+                      let testScore = 71;
+                      let letterGrade;
+                                 
+                                 switch(true){
+                                     case  testScore >= 90:
+                                            letterGrade = 'A';
+                                            break;
+                                     case  testScore >= 80:
+                                            letterGrade = 'B';
+                                            break;
+                                     case  testScore >= 70:
+                                            letterGrade = 'C';
+                                            break;
+                                     case  testScore >= 60:
+                                            letterGrade = 'D';
+                                            break;
+                                     default:
+                                            letterGrade = 'F';
+                                 }
+                                 console.log(letterGrade);
+
+***** STRING METHODS = allow you to manipulate and work with text (strings) *****
+
+      Example:
+           let userName = 'BroCode';
+
+           console.log(userName.charAt(0));
+           console.log(userName.indexOf('o'));
+           console.log(userName.length);
+           
+           userName = userName.toLowerCase();
+           userName = userName.toUpperCase();
+                      console.log(userName);
+
+***** METHOD CHAINING = Calling one method after another in one continuous line of code. *****
+
+           let userName = Window.prompt('Enter your username: ');
+
+           ----- NO METHOD CHAINING ------
+
+           userName = userName.trim();
+           let letter = letter.chartAt(0);
+           letter = letter.toUpperCase();
+
+           let extraChars = userName.slice(1);
+           extraChars = extrachars.toLowerCase();
+           userName = letter + extraChars;
+
+           console.log(username);
+
+           ----- Method Chaining -------
+
+           userName = userName.trim().chartAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+           console.log(userName);
+
+***** LOGICAL OPERATORS = used to combine or manipulate boolean values (true or false) *****
+
+           AND = &&
+           OR = ||
+           NOT = !
+           
+    Example:
+           const temp = 20;
+
+           if(temp > 0 && <= 30){
+                console.log('the whether is good');
+           }
+           else{
+                console.log('the weather is bad');
            }
 
-Example 2:
-           let testScore = 71;
-           let letterGrade;
-           
-           switch(true){
-               case  testScore >= 90:
-                      letterGrade = 'A';
-                      break;
-               case  testScore >= 80:
-                      letterGrade = 'B';
-                      break;
-               case  testScore >= 70:
-                      letterGrade = 'C';
-                      break;
-               case  testScore >= 60:
-                      letterGrade = 'D';
-                      break;
-               default:
-                      letterGrade = 'F';
+           ------ OPERATORS -----   
+
+                      = assignment Operator 
+                      == comparison operator (compare if values are equal)
+                      === strict equality operator (compare if values & datatype are equal)
+                      != inequalify operator
+                      !== strict inequality operator 
+
+
+
+***** WHILE LOOP = repeat some code while some condition is true *****
+
+           Example: 
+                      let userName = '';
+
+                                   while (userName === '' || userName === null){
+                                              userName = window.prompt ('enter your name');
+                                   }
+                                   console.log('Hello ${userName}');
+
+
+***** FOR LOOP = repeat some code a LIMITED amount of times *****
+
+
+     Example: 
+           for(let i - 0; i <= 10; i++){
+                      console.log(Hello);
+                      console.log(i);
            }
-           console.log(letterGrade);
-           
+
+     
+
+
 
 
 
