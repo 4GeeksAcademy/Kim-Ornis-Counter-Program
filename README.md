@@ -7,18 +7,16 @@ a
 comment 
 */
 
-/*
-console.log('Hello World');
-console.log('I like Pizza');
 
+console.log('Hello World');
+window.promt('propmt some sort of input');
 window.alert('This is an alert!');
-window.alert('Did you do something wrong?');
-*/
-/*
+
+
 First must declare an ID in html 
 document.getElementById('myH1').textContent = 'Hello My People';
 document.getElementById('myP').textContent = 'Lets all learn to code together ';
-*/
+
 
 
 ***** Variable = a container that stores a value. *****
@@ -316,9 +314,39 @@ document.getElementById('myP').textContent = 'Lets all learn to code together ';
                       console.log(i);
            }
 
-     
+****** Function = a section of reusable code. (declare once, use it whenever you want. Call the function to execute that code.) ********   
 
+    Example 1: 
+           function happyBirthday(username, age){
+                      console.log('HAPPY BIRTHDAY TO YOU!!!');
+                      console.log('HAPPY BIRTHDAY Bro!!!');
+                      console.log('HAPPY BIRTHDAY DEAR ${username}!!!');
+                      console.log('HAPPY BIRTHDAY YOU ARE NOW ${age} YEARS OLD!!');
+                      }
+           happyBirthday('kim', 28);
+           happyBirthday('spongebob', 50);
+           happyBirthday('patrick', 29);
 
+    Example 2: 
+           function add(x, y){
+                      return x - y;
+                      }
+           function subtract(x, y){
+                      return x - y;
+                      }
+           function multiply (x, y){
+                      return x * y;
+                      }
+           function divide (x, y){
+                      return x / y;
+                      }
+                      
+           console.log(add(2, 3));
+           console.log(subtract(2, 3));
+           console.log(multiply(2, 3));
+           console.log(divide(2, 3));
+           
+           
 
 
 
