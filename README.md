@@ -1,21 +1,23 @@
 # Kim-Ornis-Counter-Program
-//This is a Comment 
+JAVASCRIPT NOTES
 
-/*
-this is 
-a 
-comment 
-*/
-
-
-console.log('Hello World');
-window.promt('propmt some sort of input');
-window.alert('This is an alert!');
+            //This is a Comment 
+                                 
+           /*
+           this is 
+           a 
+           comment 
+           */
 
 
-First must declare an ID in html 
-document.getElementById('myH1').textContent = 'Hello My People';
-document.getElementById('myP').textContent = 'Lets all learn to code together ';
+           console.log('Hello World');
+           window.promt('propmt some sort of input');
+           window.alert('This is an alert!');
+
+
+           First must declare an ID in html 
+           document.getElementById('myH1').textContent = 'Hello My People';
+           document.getElementById('myP').textContent = 'Lets all learn to code together ';
 
 
 
